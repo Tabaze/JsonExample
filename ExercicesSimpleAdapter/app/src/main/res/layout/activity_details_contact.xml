@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".detailsContact">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/image1"
+        android:layout_weight="1"
+        android:id="@+id/im"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom : xxxxxx"
+        android:textSize="30sp"
+        android:id="@+id/nom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prenom : xxxxxx"
+        android:textSize="30sp"
+        android:id="@+id/prenom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tel : xxxxxx"
+        android:textSize="30sp"
+        android:id="@+id/tel"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email : xxxxxx"
+        android:textSize="30sp"
+        android:id="@+id/mail"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date naissance : xxxxxx"
+        android:textSize="30sp"
+        android:id="@+id/date"/>
+
+
+</LinearLayout>

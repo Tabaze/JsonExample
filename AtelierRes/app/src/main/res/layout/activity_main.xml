@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond_ecran"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/BasestyleTextView.TitreStyle"
+        android:text="@string/titre_app"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn">
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/label1"/>
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/eMontant"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/LabelStyle"
+        android:text="@string/label2"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_btn"
+        android:id="@+id/grp">
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:text="@string/devise1"
+            android:checked="true"
+            android:id="@+id/iddollar"/>
+        <RadioButton
+            style="@style/RadioButtonStyle"
+            android:text="@string/devise2"
+            android:id="@+id/idEuro"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/bouton1"
+            android:id="@+id/b1"/>
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/bouton2"
+            android:id="@+id/b2"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/BasestyleTextView.TResStyle"
+        android:text="@string/default_res"
+        android:id="@+id/tres"/>
+
+</LinearLayout>

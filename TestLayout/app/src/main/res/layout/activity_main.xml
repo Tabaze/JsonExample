@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#9AEC67"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:id="@+id/gp1"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignRight="@+id/login">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username :"
+            android:textSize="24dp"
+            android:layout_marginRight="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF38D3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gp1"
+        android:id="@+id/gp2"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignRight="@+id/login">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:textSize="24dp"
+            android:layout_marginRight="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF38D3"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#4CAF50"
+        android:layout_below="@id/gp2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ligne"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignRight="@+id/login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/ligne"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignRight="@+id/login"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/co"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment :"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/co"
+            android:background="#FF38D3"
+            android:lines="7" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginTop="10dp"
+            android:background="#673AB7"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="#FFEB3B"
+            android:text="Save"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

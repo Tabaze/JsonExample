@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des coloeur :"
+        android:textColor="#FF0000"
+        android:textSize="25dp"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/GrpColor"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Noir"
+            android:textSize="25dp"
+            android:id="@+id/rdBlack"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rdJaune"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Jaune"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rdBlue"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:text="Bleu"
+            android:textSize="25dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rouge"
+            android:textSize="25dp"
+            android:id="@+id/rdRed"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taille :"
+        android:textColor="#FF0000"
+        android:textSize="25dp"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/grpTaille"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="30dp"
+            android:textSize="25dp"
+            android:id="@+id/rd30"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="40dp"
+            android:textSize="25dp"
+            android:id="@+id/rd40"/>
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="50dp"
+            android:textSize="25dp"
+            android:id="@+id/rd50"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60dp"
+            android:textSize="25dp"
+            android:id="@+id/rd60"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Style :"
+        android:textColor="#FF0000"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chkGras"
+            android:layout_width="198dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:text="Gras" />
+        <CheckBox
+            android:id="@+id/chkItalic"
+            android:layout_width="210dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:text="Italique" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        android:gravity="center"
+        android:text="Text"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+</LinearLayout>

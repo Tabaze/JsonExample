@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#B76C6767"
+        android:textSize="25dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:text="AuthentificationProjet"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrer votre nom et votre mote de pass :"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:id="@+id/nom"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="mote de passe"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:id="@+id/mot"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connecter"
+        android:layout_margin="10dp"
+        android:id="@+id/con"
+        />
+</LinearLayout>

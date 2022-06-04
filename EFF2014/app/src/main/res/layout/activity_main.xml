@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textSize="24dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bag"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="25dp"
+        android:inputType="numberDecimal"
+        android:hint="Bagage KG"
+        />
+
+    <EditText
+        android:id="@+id/dis"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="25dp"
+        android:hint="Distance KM"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:textSize="16dp"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cal"
+        android:text="Calculer"
+        />
+    <EditText
+        android:textSize="24dp"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/res"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        />
+</LinearLayout>

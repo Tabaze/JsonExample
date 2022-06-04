@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond_ecran"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+    <TextView
+        android:text="@string/titre_app"
+        style="@style/TitreStyle"
+        android:id="@+id/t1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/t1"
+        android:id="@+id/grpVal">
+        <TextView
+            android:text="@string/label1"
+            style="@style/LabelStyle"/>
+        <EditText style="@style/EditTextStyle"
+            android:id="@+id/valeur"/>
+    </LinearLayout>
+    <TextView
+        android:text="@string/label2"
+        style="@style/LabelStyle"
+        android:layout_below="@id/grpVal"
+        android:id="@+id/t2"/>
+
+    <RadioGroup
+        android:id="@+id/doro"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2">
+        <RadioButton style="@style/RadioButtonStyle"
+            android:id="@+id/dolar"
+            android:text="@string/devise1" />
+        <RadioButton style="@style/RadioButtonStyle"
+            android:id="@+id/euro"
+            android:text="@string/devise2" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/doro"
+        android:id="@+id/t3">
+            <Button  android:text="@string/bouton1"
+                android:id="@+id/btnCal"
+                style="@style/ButtonStyle"
+                />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/bouton2"/>
+    </LinearLayout>
+    <TextView
+        android:text="@string/default_res"
+        style="@style/TResStyle"
+        android:layout_below="@id/t3"
+        android:id="@+id/tres"/>
+</RelativeLayout>
