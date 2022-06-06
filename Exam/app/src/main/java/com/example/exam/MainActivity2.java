@@ -16,6 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        //Q 8
         db=new MyDBProduit(this);
         liste=findViewById(R.id.liste);
         ArrayList<Produit> prds=MyDBProduit.getAllProduits(db.getReadableDatabase());

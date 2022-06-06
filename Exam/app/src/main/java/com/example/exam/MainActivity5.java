@@ -24,6 +24,7 @@ public class MainActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
+        //Q 11
         btn=findViewById(R.id.edit);
         el=findViewById(R.id.lib);
         ef=findViewById(R.id.fam);

@@ -73,6 +73,7 @@ public class MyDBProduit extends SQLiteOpenHelper {
         return prds;
     }
     public static Produit getAOneProduit(SQLiteDatabase sql, int id){
+        //5 e
         Produit p = null;
 
         Cursor cur = sql.rawQuery("SELECT * FROM "+TABLE_NAME + " WHERE ID="+id ,null);

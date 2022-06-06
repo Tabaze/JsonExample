@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         db =new MyDBProduit(this);
+        //Q 7
         //ArrayList<Produit> prds =new ArrayList<>();
         //prds.add(new Produit(1,"produit 1","liquide",12.4,22));
         //prds.add(new Produit(2,"produit 2","Epicerie",22,10));
